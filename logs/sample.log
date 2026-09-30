@@ -1,0 +1,31 @@
+2026-09-30 10:15:00 [INFO] Application started successfully on port 8080
+2026-09-30 10:15:02 [DEBUG] Initializing database connection pool (max_connections=20)
+2026-09-30 10:15:05 [INFO] Database connection pool established
+
+2026-09-30 10:15:20 [INFO] User session started for user_id: 1042
+2026-09-30 10:16:05 [INFO] Payment processing initiated for transaction tx_99218
+2026-09-30 10:16:10 [ERROR] Database connection failed - connection timed out (host: db.internal.local)
+2026-09-30 10:16:15 [ERROR] Database connection failed - connection timed out (host: db.internal.local)
+2026-09-30 10:16:22 [WARNING] High memory usage detected: 85% threshold exceeded
+
+2026-09-30 10:16:30 [DEBUG] Retrying transaction tx_99218 (attempt 2)
+2026-09-30 10:16:35 [ERROR] Database connection failed - connection timed out (host: db.internal.local)
+2026-09-30 10:17:00 [ERROR] Request timeout while calling payment gateway API
+2026-09-30 10:17:05 [INFO] Fallback gateway engaged for transaction tx_99218
+2026-09-30 10:17:15 [ERROR] Authentication failed - invalid JWT signature for user_id: 2091
+2026-09-30 10:17:20 [WARNING] Disk space warning: /var/log filesystem 88% full
+
+2026-09-30 10:17:35 [ERROR] Request timeout while calling payment gateway API
+2026-09-30 10:18:00 [DEBUG] Memory garbage collection cycle triggered
+2026-09-30 10:18:10 [INFO] User session ended for user_id: 1042
+2026-09-30 10:18:15 [ERROR] Authentication failed - invalid JWT signature for user_id: 2091
+2026-09-30 10:18:30 [ERROR] Database connection failed - connection timed out (host: db.internal.local)
+2026-09-30 10:19:00 [INFO] Scheduled cache clean completed (freed 42MB)
+2026-09-30 10:19:15 [ERROR] Request timeout while calling payment gateway API
+
+2026-09-30 10:19:40 [WARNING] High CPU usage detected: core 0 load at 94%
+2026-09-30 10:20:00 [ERROR] Authentication failed - invalid JWT signature for user_id: 3105
+2026-09-30 10:20:15 [DEBUG] Health check ping sent to upstream server
+2026-09-30 10:20:20 [INFO] Health check response OK (latency: 12ms)
+2026-09-30 10:20:25 [ERROR] Payment gateway transaction failed for tx_99218
+2026-09-30 10:20:30 [ERROR] Payment gateway transaction failed for tx_88412
